@@ -1,0 +1,145 @@
+<!-- 
+   File Name : index.html
+   Author Name : Chau Sin Han
+   File Created on : 26 October 2022 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewind Rentals</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet" type="text/css">
+    
+    <style type="text/css">
+        #welcome-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 85px;
+            padding-top: 40px;
+            border-radius: 20px;
+            height: 600px;
+            margin-right: 30px;
+            margin-bottom: 150px;
+            box-shadow: 2px 8px 16px 2px rgba(255,255,255,0.8);
+            margin-left: 1cm;
+        }
+
+        #welcome-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #welcome-paragraph {
+            font-size: 19px;
+            width: 50%;
+            text-align: center;
+            margin: 50px;
+            line-height: 2em;
+            margin-left: 80px;
+        }
+
+        #welcome-images{
+            margin-left: 90px;
+        }
+
+        #welcome-image-1{
+            width: 225px;
+            height: 350px;
+            position: absolute;
+        }
+        #welcome-image-2{
+            width: 200px;
+            height: 300px;
+            margin: 160px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Rewind Rentals</p>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <p class="drop-text product-nav">Products</p>
+                <div class="dropdown-content">
+                    <a href="../xml/movies.xml">Movies</a>
+                    <a href="../xml/tvshows.xml">TvShows</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html" style="width: 220px;" >Terms and Conditions</a>
+        </nav>
+    </header>
+
+    <div id="welcome-section">
+        <h1>Rewind Rentals</h1>
+        <div id="welcome-container">
+            <div id="welcome-paragraph">
+                <p><strong>Looking for something entertaining but not planning to use it for the long term?</strong></p>
+                <p>
+                    <em>Rewind Rentals</em> is the place for you to rent them! We are a video rental franchise in <abbr title="Australia">Aus</abbr> that provides a platform not only for us and for customers to list their home entertainment products <strong>for short term rentals</strong> under a wide range of categories, such as <strong>movies, games, speakers, consoles, screens, and more</strong>.
+                </p>
+            </div>
+            <div id="welcome-images">
+                <img id="welcome-image-1" alt="Tvshow's Image" src="../images/LoveBetweenFairyAndDevil.jpg">
+                <img id="welcome-image-2" alt="Movie's Image" src="../images/MyLove.jpg">
+            </div>
+        </div>
+    </div>
+
+    <h1>Featured Products</h1>
+    <div>
+        <ol class="featured-prod--container">
+            <li class="container">
+                <h2>My Love</h2>
+                <img alt="Movie Image" src="../images/MyLove.jpg">
+                <div class="text-box">
+                    <p>Tells the 15-year love story between Zhou Xiao Qi, a long-time swimming student and You Yong Ci, a transfer student. In high school, <abbr title="Zhou Xiao Qi">Zhou</abbr> fell in love at first sight with <abbr title="You Yong Ci">You</abbr>.
+                        A young and ignorant pure love, the boy silently guarded, but the girl left without saying goodbye. Life after that, 15 years of love long-distance race. Your wedding is also my coming-of-age gift.
+                    </p>
+                </div>
+            </li>
+
+            <li class="container">
+                <h2>The Monkey King 3</h2>
+                <img alt="Movie Image" src="../images/TheMonkeyKing3.jpg">
+                <div class="text-box">
+                    <p>The Monkey King and his traveling companions must find a way to escape from the clutches of a queen who rules an all-female kingdom. 
+                        They soon land in even deeper trouble when their shenanigans anger the mighty River God.
+                    </p>
+                </div>
+            </li>
+
+            <li class="container">
+                <h2>Shining For One Thing</h2>
+                <img alt="Tvshow Image" src="../images/ShiningForOneThing.jpg">
+                <div class="text-box">
+                    <p>
+                        Lin Bei Xing is a young woman, who is about to enter her 30s, suddenly finds that her life has gone awry when her fiancé, Zhan Yu, whom she has been in love with since high school, cancels their engagement to date her best friend. 
+                        Hoping to rekindle memories of their love, <abbr title="Lin Bei Xing">Lin</abbr> invites <abbr title="Zhan Yu">Zhan</abbr> to return to their high-school premise in their old school uniforms for a day. While waiting for Zhan Yu in the rain, she activates her old phone and unknowingly travels back in time. 
+                    </p>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/sin-han-chau-0465b21bb"><img alt="Linkedin icon to profile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAEpklEQVRoge2ZT0wcVRzHP2+G3R2pYAOalCyVGCvQLKQmEL30Qu1Fe/BPCjalBxNbjYFGvRQaI1kTNUDioQqN1dhEQ2MptWkT6cEol/ZSAkZD1wpKmlqwjUBrKJadXWafh6UUdufvsuylfJJNNu/3mzff77z35v0ZWGedBxuRlVrqT6lsqXyGhKgDUYOgEigBHl7MmAP+RjIKchipDpC/dZCwSKz21qsz8N7IZgzRBGIfyKDHqycQ9GAY3XRum8hUQmYGDv/8GNL/IfAa4M/05ovEQBwnnvc+n1RMe73Yu4GWyF4U+RmSIs/X2jODpJmOqpNeLnJv4I0hH0XaUWC/V2WeEPIYM/pBvqiNu0p3VWl4KJ+odhp4fjXa3CPPo+n1hGvvOmU6G0g++XPkTPw95I9oyi7CoZhdluJYT7Lb5Fg8gNhJlCOOWbbR1kgjyB7TmKFDPJr879NADXjX6Aq5h/bqXquotYHDV4qRxu/Ao2kxQ+eVcj9d9eUIAU2nxjgzFlsbE4JbxHwVVq9Y6y4kjY8xEw8Qj9JVX07JI342Ffr5dPdT91sj20iK8MU/sAqbGzj0aynJScqmXrn0X2RnQWLHfloij5sFzA0oajN2M6xP42DfH9ycjTH5r05T71hyHKwdfhT5llkg/dmFpUI0cg0ota0yZ4P4HmKS8UgZfQ3G8tK8tDx95FlQ7MVH70BiWT36PCgx0ArSYwCKCoENsKCDEYdEAhQBqh/yAiCc3+YggzwRqgEG7Q0kRJ3j9JZYQB7ZvqJIvH3RJnaBMm2eQzuC7KoqpqTQzz9zcfovT9Px0yRX/8tz14KCHc4GhFLLsgGaDXZuKeC7A1UUavdvV7oxwJvbg+yt3cTuryL8cE13YULWpJaYtJ0sX63gVM4cqF4hfjkFmsrp10OU5S+AdNjfCFGRWpRuQFCSmUxrCjTVMd76XDA5RmyRadrSDcilbWDWiC0kaDk7TrDtEsG2S7SeGye2sPJpvxAqBsN23QZQkFpg3q5Zpq3/Kp0Xb4NvAwAdF24D0P7ik0s5wY0BSHgfe2ZdaC5DnZZ8MzS9ONGJ5M+n8fXQyqWNqghcvDzupBaYdaEbGSu14MZsnJVzpuDmrKsNVwoiTZvJW0iMZVBzbpByNLXIpAUSQzkRkwmCNG0mBtSBnIjJjDRt6Qbytw4C13OhxiN/oYWGUwvTDYRFAsGJnEjyhDxhdhRpvgw0jG7AcVbJITqq0W0WMDfQuW0CxPE1leSNL/no6UmzgPXC+d1IEQE5itm+ODprvubXCu1jbutYyQxxX6XVpt5+5d9yeQ+Cb21z1hzRQHuozypqvxXqqDqJkMeyrsktgm478eDmZO7PK01IeTZrolwj+glMveOU5Wygr8HgIb0R5Pms6HLH92jzDYTrFpwS3eymIVx7l1v6SyA+X7U0JwTdaFMvuzmZTqZ7pXXkVRBdWJ3aZYyYApqc+nwq7lpgOe3VvQi1EjgKOO0B3aADXehUehUPq/7I90uQRF4zkkZgs8err4PsQTW6rSYpN2TnVDMsFe7+Vps8t5E1CFGBkMGl/bVgDskEkrHFJfEAWmg4G59Z11nnQed/CiRoQx2CdOQAAAAASUVORK5CYII="></a>
+        <span>
+            <a style="margin-top:0px;" href="https://www.newcastle.edu.au">
+                <img alt="School icon to school website" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFg0lEQVRoge2YbYhUVRjHf+fcmbmzO7ubrra5i0S+ROCilOiSGpFpSEQRkVBpLx97AyEiS7DcgrYPkR/6EiHkh8iQIAhWe/uQBoqaqJRRSCmR1m6tzuyuO3vfztOHO693ZnyZnUGh/cPlzn3Ouc//+c/znOecGZjGNKYxjWsJ1WyC9NqHhwV8BWdE8S3KfBv45rdZmZ5hdfRDb6r+Y40I8lIQz78RQKAbWAFstYB027kLQOdU/TddgHHdWkMzG+G/6QICxx1RMKtZ/pu+BgT0P73Lu0TH52FkraDWKFgI6JtOHuhpNv+U0Lc/s65vf2ZdMzl0sxz37UtvFmGvCF8u25d5o1k8TSmh5d+Nvo2S17QIAEYpEDVw5J6OLY3maqwAEbV8/+h2YJNFwCbnfWK4vGe/hE8MgQ9+uLvjBZQyjaJsmID1u8U60zW6A8UzCTxecd5ldfI4IHyf7WXA3oyjkohil7R2PH10mZryJgYNErBwj9gzU5lPQD3SYibY4gywsuVXWpMWIGQnAw5nF/CmvZUJnUJgMB7vWH9wpcpOlXvKApZ89XfKTrZ8DtzXbsbY5rzF0tYzJO2wP0huHUy6AScm5tJvbyOtZwCyT9vBQ4funDV6zQSsOJDp9D32An2zzT/0O/30poZJxPNupThZBMc1/DzRxevJfkZ0F8DhWJz7D6684Xy9MUypjXq+rAb6esxZBpwtLGodygUvxUtyF0IioehtG+Kd7Kt0B38C9OV81I2qGej9aHyOxOQzP5AVxhhtjBAEBmMEY8J7/jk102LPnOeY1z5OPBYG7/tC1jG4XgBAPK5pSShiVjju+cLp8RQPDO3g4oUArRWWpdFaobWOPhvLUgcsSz360xNtQ9FYq56FJC7bjGFVvgTydVwYL3kc/ddjwW3jhLEJjhuQdjsw3RsxqcUAuBdP4vz9Ke2xYey4Im7B/PZxRk96WJau8FnkVIBoEXWXMdIPPBuNtaKEencPt4F6vJowkAoiIAwewQsMaacdf8EAunMVRwYHOTI4iO5cgTu/n7TbgRcYBMm9Ew069FMdesPCj0c6LitAnNQGoGJiCIWqRoxBJGyXpudJYskZ2IkE3sRFvImL2IkEseQMpHsj2ckgF2nlXhb6rtVXpM1WyccuKyCB83zUmYpEXfqocqUDgucFmNRiLEsTj8fQWvP7iaMc+mI3lqUxbbfj+QFhJqXSTxlH3lD80mwZ3xSNt2INfK07l5CP/Up7lNwb3iLpX7r2fjxnEm9yMhwXKVwg/NI99woJCljUFTFUCKhW45dDPvC4pXDHfySwV+F5Pl3zFvDgiy/jeT6O66LHj4WdKiegHq4oKgXU4yUXSYsNzl+7cFO9wAz8wAcgCAxe9gLW2Z20JMNWKhX5qg81M3DqdNF267zi5+r28CVLQ5s1RObUywTdT+G33w6AGjuGdXYnHfEMllaFEqqP6woFXM5Wai/uE4KdgE6dJntuO55vQAkxS9Nia2JWXqwUNumr5WqKgHxAhUxYQlurBtEUi7I4J7c9XkcCpBBSmZDiWDHo0vHrRkBpCRXuUtJWRaqONVXALXMrbbXtJXVdpWTyk6Nj9XFdoYCrgpiyEpHAcP6bs4wdHwGg/Y5OZq7pQekSQU3bB3JO/zhXtN1c8vdTNbtESmTkm3Nc2F88+Z7fN4wxMHtdd9nceriiqDzMVWlveVstO5iwRCQ81KWPnSdAlV2Z42lEDIXaEVMnVzkauIiLNe+O+URPle6YX7aYwzPR1XNF0aA2mj8ah0GZGkdiKZl3XW1k0TVgai7O0qiblYHcvbur0lbbLmXlUSsDhW5V2Pjq4SpHhYDa394lkCuNfCZql1D5WqmLK4LG/B6oCKx2BsIZtdfANKYxjf8Z/gP6AELx2Gf3MAAAAABJRU5ErkJggg==">
+            </a>
+        </span>
+        <address style="margin-right: 1cm;"><p style="font-size: 14px;">&copy; Copyright by Chau Sin Han</p></address>
+    </footer>
+</body>
+</html>
+
